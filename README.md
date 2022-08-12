@@ -20,6 +20,8 @@ The output if chart-releaser fails.
 
 ```
 uses: vapor-ware/chart-releaser@v1
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 with:
-  args: update --dry-run'
+  args: update --dry-run
 ```
